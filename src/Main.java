@@ -26,5 +26,7 @@ public class Main {
             System.out.print(result.get(i) + ", ");
         }
         System.out.println(result.get(result.size() - 1) + "]");
+
+        System.out.println("Succesfully reverted in Git.");
     }
 }
