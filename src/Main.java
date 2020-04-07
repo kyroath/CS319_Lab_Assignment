@@ -26,5 +26,25 @@ public class Main {
             System.out.print(result.get(i) + ", ");
         }
         System.out.println(result.get(result.size() - 1) + "]");
+
+        System.out.println("---------------------------------");
+
+        Player tom = new Player("Tom");
+        Player john = new Player("John");
+        Player james = new Player("James");
+        Player henry = new Player("Henry");
+
+        Die die = new Die();
+        for (int i = 0; i < 5; i++) {
+            tom.addScore(die.rollDie());
+            john.addScore(die.rollDie());
+            james.addScore(die.rollDie());
+            henry.addScore(die.rollDie());
+        }
+
+        System.out.println(tom);
+        System.out.println(john);
+        System.out.println(james);
+        System.out.println(henry);
     }
 }
